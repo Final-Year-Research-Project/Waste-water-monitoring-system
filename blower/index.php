@@ -175,7 +175,7 @@
                 <h2><i class="fas fa-thermometer-half icon"></i> Temperature</h2>
                 <p><?php echo $row["temperature"]; ?></p>
                 <a href="temp.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
+                    <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
             
@@ -183,7 +183,7 @@
                 <h2><i class="fas fa-tint icon"></i> Humidity</h2>
                 <p><?php echo $row["humidity"]; ?></p>
                 <a href="humi.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
+                    <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
             
@@ -191,7 +191,7 @@
                 <h2><i class="fas fa-vial icon"></i> Vibration</h2>
                 <p><?php echo $row["vibration"]; ?></p>
                 <a href="vib.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
+                    <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
             
@@ -199,28 +199,88 @@
                 <h2><i class="fas fa-bolt icon"></i> Amperage</h2>
                 <p><?php echo $row["amperage"]; ?></p>
                 <a href="amp.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
+                    <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
 
             <!-- Blower Health Card -->
             <div class="card card-predicted">
                 <h2><i class="fas fa-heartbeat icon"></i> Blower Health</h2>
-                <p>Predicted: 85%</p>
-                <a href="your-chart-page.html" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
-            
-            <?php
-        } else {
-            echo "No data available.";
-        }
+                <?php
+                // Create the data array for prediction
+                $dataForPrediction = array(
+                    'humidity' => (float)$row["humidity"],
+                    'temperature' => (float)$row["temperature"],
+                    'vibration' => (float)$row["vibration"],
+                    'amperage' => (float)$row["amperage"]
+                );
 
-        // Close the connection
-        $conn->close();
-        ?>
-    </div>
+                // Convert the data array to JSON
+                $jsonData = json_encode($dataForPrediction);
+
+                // Set the Flask server URL
+                $serverUrl = 'http://127.0.0.1:5000/predict';
+
+                // Initialize cURL
+                $ch = curl_init($serverUrl);
+
+                // Set cURL options
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+
+                // Execute cURL and get the response
+                $response = curl_exec($ch);
+
+                // Close cURL
+                curl_close($ch);
+
+                // Decode the response JSON
+                $prediction = json_decode($response, true);
+
+                // Display the prediction or error message
+                if (isset($prediction['prediction'])) {
+                    echo '<p>Predicted Health: ' . $prediction['prediction'] . '%</p>';
+                    echo '<a href="health.php" class="chart-link">';
+                    echo '<i class="fas fa-chart-line chart-icon"></i>';
+                    echo '</a>';
+                // Store data in another database table
+                
+
+                $newConnection = new mysqli('localhost', 'root', '', 'temphumidnew');
+                if ($newConnection->connect_error) {
+                    die("Connection failed: " . $newConnection->connect_error);
+                }
+
+                $insertSql = "INSERT INTO blower_prediction (humidity, temperature, vibration, amperage, prediction)
+                              VALUES ('" . $dataForPrediction['humidity'] . "', '" . $dataForPrediction['temperature'] . "', '" . $dataForPrediction['vibration'] . "', '" . $dataForPrediction['amperage'] . "', '" . $prediction['prediction'] . "')";
+
+                if ($newConnection->query($insertSql) === TRUE) {
+                    
+                } else {
+                    echo "Error inserting data into new table: " . $newConnection->error;
+                }
+
+                // Close the new connection
+                $newConnection->close();
+            } else if (isset($prediction['error'])) {
+                echo '<p>An error occurred while getting prediction: ' . $prediction['error'] . '</p>';
+            }
+            ?>
+        </div>
+        
+        <?php
+    } else {
+        echo "No data available.";
+    }
+
+    // Close the connection
+    $conn->close();
+    ?>
+</div>
+
+
 
     <script>
         function getWeather() {
@@ -243,7 +303,7 @@
         location.reload();
     }
 
-    setInterval(refreshPage, 5000); // Reload every 5 second
+    setInterval(refreshPage, 30000); // Reload every 30 second
     </script>
 </body>
 </html>

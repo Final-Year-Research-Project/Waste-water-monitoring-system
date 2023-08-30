@@ -10,7 +10,6 @@
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
             margin: 40px;
-            top:110%;
             padding: 0;
         }
         .container {
@@ -25,6 +24,15 @@
             text-align: center;
             margin-bottom: 20px;
             color: #333;
+            position: relative;
+        }
+        .cancel-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #999;
+            text-decoration: none;
         }
         canvas {
             display: block;
@@ -36,24 +44,19 @@
         .chart-container {
             margin-bottom: 20px;
         }
-
-        
     </style>
 </head>
 <body>
     <div class="container">
-    <a href="./" class="cancel-icon">
-            <i class="fas fa-times"></i>
-        <h1>Temperature Pulse Chart</h1>
+        <h1>Temperature Pulse Chart
+            <a href="./" class="cancel-icon">
+                <i class="fas fa-times"></i>
+            </a>
+        </h1>
         <div class="chart-container">
             <canvas id="temperatureChart" width="400" height="200"></canvas>
-            
-        
-    </button>
         </div>
-        
         <button id="downloadPdf">Download PDF</button>
-    </div>
     </div>
 
     <script>
@@ -76,30 +79,11 @@
             echo json_encode($temperatureData);
         ?>;
 
-var downloadPdfButton = document.getElementById('downloadPdf');
-    downloadPdfButton.addEventListener('click', function () {
-        var pdfContainer = document.getElementById('temperatureChart');
-        var pdfOptions = {
-            margin: 10,
-            filename: 'temperature_chart.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-
-        html2pdf().from(pdfContainer).set(pdfOptions).outputPdf().then(function (pdf) {
-            var blob = new Blob([pdf], { type: 'application/pdf' });
-            var link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'temperature_chart.pdf';
-            link.click();
-        });
-    });
-
-
-        
         var timestamps = temperatureData.map(data => data.date);
         var temperatures = temperatureData.map(data => data.temperature);
+
+        timestamps.reverse();
+        temperatures.reverse();
 
         var temperatureChart = new Chart(ctx, {
             type: 'line',
@@ -136,11 +120,12 @@ var downloadPdfButton = document.getElementById('downloadPdf');
                 }
             }
         });
+        
         function refreshPage() {
-        location.reload();
-    }
+            location.reload();
+        }
 
-    setInterval(refreshPage, 15000); // Reload every 15 second
+        setInterval(refreshPage, 15000); // Reload every 15 seconds
     </script>
 </body>
 </html>
