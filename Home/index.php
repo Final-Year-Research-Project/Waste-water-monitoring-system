@@ -82,7 +82,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="company-name">Your Company Name</div>
+        <div class="company-name">Daiki Axis</div>
         <a href="../Home" class="sidebar-link">Home</a>
         <a href="../blower/" class="sidebar-link">Blower Dashboard</a>
         <a href="../flowrate/" class="sidebar-link">Flowrate Dashboard</a>

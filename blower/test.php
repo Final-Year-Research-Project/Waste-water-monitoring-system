@@ -14,8 +14,8 @@
         <?php
         // Create a dummy data array
         $dummyData = array(
-            'humidity' => 27,
-            'temperature' => 30,
+            'humidity' => 90,
+            'temperature' => 40,
             'vibration' => 17,
             'amperage' => 5
         );

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Blower Dashboard</title>
+    <title>Blower Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
@@ -54,7 +54,10 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="company-name">Your Company Name</div>
+        <div class="company-name">
+            <img src="../images/Daiki-Logo-c.png" alt="Company Logo" style="max-width: 100px; height: auto;">
+            
+        </div>
         <a href="../Home" class="sidebar-link">Home</a>
         <a href="../blower/" class="sidebar-link">Blower Dashboard</a>
         <a href="../flowrate/" class="sidebar-link">Flowrate Dashboard</a>
