@@ -1,0 +1,334 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.1.7 - - [29/Aug/2023 15:02:54] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.7 - - [29/Aug/2023 15:02:55] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.7 - - [29/Aug/2023 15:03:01] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:03:08] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:03:09] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:04:59] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:05:10] "[33mGET /catch_datax HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:05:16] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:31] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:32] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:32] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:33] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:33] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:34] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:46] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:07:48] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:32] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:33] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:33] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:33] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:33] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:34] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:34] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:34] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:36] "POST /catch_data HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:42] "POST /catch_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:43] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:43] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:44] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:44] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:44] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:44] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:48] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:10:54] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:00] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:06] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:12] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:18] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:24] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:30] "POST /catch_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:33] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:34] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:34] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:34] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:36] "POST /catch_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:39] "[33mGET / HTTP/1.1[0m" 404 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:42] "POST /catch_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:45] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:48] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:11:54] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:00] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:06] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:12] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:18] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:24] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:30] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:36] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:42] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:48] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:12:54] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:00] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:06] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:12] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:18] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:24] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:30] "POST /catch_data HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:36] "POST /catch_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:42] "[33mPOST /predict HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:48] "[33mPOST /predict HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:50] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:51] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:52] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:52] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:52] "[31m[1mGET /catch_data HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:13:54] "[33mPOST /predict HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:00] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:01] "[33mGET /catch_data HTTP/1.1[0m" 404 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:06] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:12] "POST /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:14] "GET /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:18] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:24] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:30] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:36] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:42] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:48] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:14:54] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:00] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:06] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:12] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:18] "POST /predict HTTP/1.1" 200 -
+DEBUG:root:Received data: {'humidity': '77', 'temperature': '31.3', 'vibration': '24', 'amperage': '5'}
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:24] "POST /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:28] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:29] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:30] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:31] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:31] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:33] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:42] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:43] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:43] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:43] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:15:44] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:16:00] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:16:03] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:16:56] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:16:57] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:16:57] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:19] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:20] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:20] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:20] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:30] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:31] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:31] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:31] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:32] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:32] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:32] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:17:32] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:33:03] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:33:04] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:33:04] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:33:04] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:33:04] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:33:05] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:35:02] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:35:15] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:35:17] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:38:24] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:38:24] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:38:24] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:38:25] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:38:25] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:34] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:35] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:36] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:37] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:37] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:38] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:38] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:38] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:39] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:39] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:56:39] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:58:35] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 15:58:38] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 16:01:30] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 16:01:31] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 16:01:31] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 16:01:31] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 16:01:44] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 16:07:25] "GET /predict HTTP/1.1" 200 -
+ERROR:root:Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 16:07:29] "GET /predict HTTP/1.1" 200 -
