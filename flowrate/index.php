@@ -140,22 +140,7 @@
 <body>
     <?php include '../unique/sidebar.php'; ?>
     
-    <!-- Weather Sidebar -->
-    <div class="weather-sidebar">
-        <h2><i class="fas fa-cloud-sun icon"></i> Live Weather</h2>
-        <div class="weather-details">
-            <p>Select a district:</p>
-            <select id="districtSelect">
-                <option value="colombo">Colombo</option>
-                <option value="kandy">Kandy</option>
-                <!-- Add more districts here -->
-            </select>
-            <button onclick="getWeather()">Get Weather</button>
-            <div id="weatherData"></div>
-        </div>
-    </div>
-    
-    <h1>Blower Dashboard</h1>
+    <h1>Flow Rate Dashboard</h1>
 
     <div class="content">
         <?php
@@ -163,7 +148,7 @@
         require_once "db.php";
 
         // Query data
-        $sql = "SELECT * FROM dht11 ORDER BY date DESC LIMIT 1";
+        $sql = "SELECT * FROM flowrate ORDER BY ID DESC LIMIT 1";
         $result = $conn->query($sql);
 
         // Display data in cards
@@ -172,45 +157,44 @@
             ?>
             
             <div class="card">
+                <h2><i class="fas fa-tint icon"></i> Flow In Rate</h2>
+                <p><?php echo $row["flow_in"]; ?></p>
+                <a href="flowin.php" class="chart-link">
+                <i class="fas fa-chart-line chart-icon"></i>
+                </a>
+            </div>
+            
+            <div class="card">
+                <h2><i class="fas fa-tint icon"></i> Flow Out Rate</h2>
+                <p><?php echo $row["flow_out"]; ?></p>
+                <a href="flowout.php" class="chart-link">
+                <i class="fas fa-chart-line chart-icon"></i>
+                </a>
+            </div>
+            <div class="card">
                 <h2><i class="fas fa-thermometer-half icon"></i> Temperature</h2>
                 <p><?php echo $row["temperature"]; ?></p>
                 <a href="temp.php" class="chart-link">
                 <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
-            
+            <br/>
             <div class="card">
-                <h2><i class="fas fa-tint icon"></i> Humidity</h2>
-                <p><?php echo $row["humidity"]; ?></p>
-                <a href="humi.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
-            
-            <div class="card">
-                <h2><i class="fas fa-vial icon"></i> Vibration</h2>
-                <p><?php echo $row["vibration"]; ?></p>
+                <h2><i class="fas fa-vial icon"></i> Blockages Detected</h2>
+                <p><?php echo $row["blockage"]; ?></p>
                 <a href="vib.php" class="chart-link">
                 <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
-            
+    
             <div class="card">
-                <h2><i class="fas fa-bolt icon"></i> Amperage</h2>
-                <p><?php echo $row["amperage"]; ?></p>
+                <h2><i class="fas fa-bolt icon"></i> Chemical </h2>
+                <p><?php echo $row["chemical"]; ?></p>
                 <a href="amp.php" class="chart-link">
                 <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
 
-            <!-- Blower Health Card -->
-            <div class="card card-predicted">
-                <h2><i class="fas fa-heartbeat icon"></i> Blower Health</h2>
-                <p>Predicted: 85%</p>
-                <a href="your-chart-page.html" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
             
             <?php
         } else {
