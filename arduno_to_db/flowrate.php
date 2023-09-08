@@ -1,9 +1,9 @@
 <?php
 class flowrate{
  public $link='';
- function __construct($flow_in, $flow_out){
+ function __construct($flow_in, $flow_out,$temperature){
   $this->connect();
-  $this->storeInDB($flow_in, $flow_out);
+  $this->storeInDB($flow_in, $flow_out,$temperature);
  }
  
  function connect(){
@@ -12,7 +12,7 @@ class flowrate{
  }
  
  function storeInDB($flow_in, $flow_out){
-  $query = "insert into flowrate set flow_out='".$flow_out."', flow_in='".$flow_in."',temperature='".$temperature."'";
+  $query = "insert into flowrate set flow_in='".$flow_in."', flow_out='".$flow_out."',temperature='".$temperature."'";
   $result = mysqli_query($this->link,$query) or die('Errant query:  '.$query);
  }
  
