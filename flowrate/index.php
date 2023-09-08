@@ -140,6 +140,21 @@
 <body>
     <?php include '../unique/sidebar.php'; ?>
     
+        <!-- Weather Sidebar -->
+    <div class="weather-sidebar">
+        <h2><i class="fas fa-cloud-sun icon"></i> Live Weather</h2>
+        <div class="weather-details">
+            <p>Select a district:</p>
+            <select id="districtSelect">
+                <option value="colombo">Colombo</option>
+                <option value="kandy">Kandy</option>
+                <!-- Add more districts here -->
+            </select>
+            <button onclick="getWeather()">Get Weather</button>
+            <div id="weatherData"></div>
+        </div>
+    </div>
+
     <h1>Flow Rate Dashboard</h1>
 
     <div class="content">
@@ -179,22 +194,58 @@
                 </a>
             </div>
             <br/>
-            <div class="card">
-                <h2><i class="fas fa-vial icon"></i> Blockages Detected</h2>
-                <p><?php echo $row["blockage"]; ?></p>
-                <a href="vib.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
+           
     
-            <div class="card">
-                <h2><i class="fas fa-bolt icon"></i> Chemical </h2>
-                <p><?php echo $row["chemical"]; ?></p>
-                <a href="amp.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
+            <div class="card card-predicted">
+                <h2><i class="fas fa-vial icon"></i> Needed Coagulant</h2>
+                <?php
+                // Create the data array for prediction
+                $dataForPrediction = array(
+                    'flow_in' => (float)$row["flow_in"],
+                    'temperature' => (float)$row["temperature"],
+                );
 
+                // Convert the data array to JSON
+                $jsonData = json_encode($dataForPrediction);
+
+                // Set the Flask server URL
+                $serverUrl = 'http://127.0.0.1:5000/predict';
+
+                // Initialize cURL
+                $ch = curl_init($serverUrl);
+
+                // Set cURL options
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+
+                // Execute cURL and get the response
+                $response = curl_exec($ch);
+
+                // Close cURL
+                curl_close($ch);
+
+                // Decode the response JSON
+                $prediction = json_decode($response, true);
+
+                // Display the prediction or error message
+                if (isset($prediction['prediction'])) {
+                    echo '<p>Coagulant: ' . $prediction['prediction'] . '</p>';
+                    echo '<a href="chem.php" class="chart-link">';
+                    echo '</a>';
+                // Store data in another database table
+                
+
+                
+
+                // Close the new connection
+               
+            } else if (isset($prediction['error'])) {
+                echo '<p>An error occurred while getting prediction: ' . $prediction['error'] . '</p>';
+            }
+            ?>
+            </div>
             
             <?php
         } else {
