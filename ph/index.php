@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Blower Dashboard</title>
+<title>PH Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
@@ -155,7 +155,7 @@
         </div>
     </div>
     
-    <h1>Blower Dashboard</h1>
+    <h1>PH Dashboard</h1>
 
     <div class="content">
         <?php
@@ -163,7 +163,7 @@
         require_once "db.php";
 
         // Query data
-        $sql = "SELECT * FROM dht11 ORDER BY date DESC LIMIT 1";
+        $sql = "SELECT * FROM ph ORDER BY date DESC LIMIT 1";
         $result = $conn->query($sql);
 
         // Display data in cards
@@ -172,8 +172,8 @@
             ?>
             
             <div class="card">
-                <h2><i class="fas fa-thermometer-half icon"></i> Temperature</h2>
-                <p><?php echo $row["temperature"]; ?></p>
+                <h2><i class="fas fa-thermometer-half icon"></i> PH</h2>
+                <p><?php echo $row["ph"]; ?></p>
                 <a href="temp.php" class="chart-link">
                 <i class="fas fa-chart-line chart-icon"></i>
                 </a>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Blower Dashboard</title>
+    <title>Temperature Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
@@ -17,29 +17,29 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #212529; /* Darker background color */
+            background-color: #343a40;
             color: white;
             padding-top: 20px;
             transition: 0.3s;
-            overflow-y: auto; /* Enable scrollbar if content overflows */
+            overflow-y: auto;
         }
         
         .sidebar a {
             display: block;
             padding: 15px 20px;
             font-size: 16px;
-            border-bottom: 1px solid #444; /* Add a separator line between links */
+            border-bottom: 1px solid #4d5256;
             text-decoration: none;
             color: white;
             transition: background-color 0.3s;
         }
         
         .sidebar a:last-child {
-            border-bottom: none; /* Remove the separator line for the last link */
+            border-bottom: none;
         }
         
         .sidebar a:hover {
-            background-color: #555;
+            background-color: #212529;
         }
 
         .weather-sidebar {
@@ -48,7 +48,7 @@
             position: fixed;
             top: 0;
             right: 0;
-            background-color: #0056b3; /* Darker blue color */
+            background-color: #007bff;
             color: white;
             padding-top: 20px;
             transition: 0.3s;
@@ -62,57 +62,67 @@
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
         }
-        
+
         .card {
-            background-color: #fff;
+            width: 500px;
+            height: 80%;
+            background-color: #3498db;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-bottom: 20px;
             transition: 0.3s;
             position: relative;
+            text-align: center;
+            font-size: 28px;
+            left: 150px;
         }
 
         .chart-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    color: #3498db;
-}
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #fff;
+        }
         
         h1 {
             margin-bottom: 20px;
             color: #333;
             text-align: center; 
+            font-size: 50px;
         }
         
         h2 {
             margin-top: 0;
-            font-size: 18px;
+            font-size: 30px;
             display: flex;
             align-items: center;
         }
         
         .icon {
             margin-right: 10px;
-            font-size: 24px;
+            font-size: 25px;
         }
         
         .card-predicted {
-            background-color: #f5f5f5;
+            width: 500px;
+            height: 80%;
+            background-color: #87CEEB;
             color: #333;
             text-align: center;
+            top: 230px;
+            position: relative;
+            left: -132px;
         }
         
-        /* Additional styles for the weather sidebar */
         .weather-details {
             padding: 20px;
-            color: white;
+            color: #fff;
         }
 
         .weather-details button {
-            background-color: #007bff; /* Blue button color */
+            background-color: #0056b3;
             border: none;
             color: white;
             padding: 10px 15px;
@@ -121,7 +131,7 @@
         }
 
         .weather-details button:hover {
-            background-color: #0056b3; /* Darker blue color on hover */
+            background-color: #003a73;
         }
 
         .company-name {
@@ -130,17 +140,13 @@
             font-size: 20px;
             font-weight: bold;
             letter-spacing: 1px;
-            border-bottom: 1px solid #444; /* Separator line below company name */
+            border-bottom: 1px solid #4d5256;
         }
-        
-            
-        
     </style>
 </head>
 <body>
     <?php include '../unique/sidebar.php'; ?>
     
-    <!-- Weather Sidebar -->
     <div class="weather-sidebar">
         <h2><i class="fas fa-cloud-sun icon"></i> Live Weather</h2>
         <div class="weather-details">
@@ -155,7 +161,7 @@
         </div>
     </div>
     
-    <h1>Blower Dashboard</h1>
+    <h1>Temperature Dashboard</h1>
 
     <div class="content">
         <?php
@@ -163,7 +169,7 @@
         require_once "db.php";
 
         // Query data
-        $sql = "SELECT * FROM dht11 ORDER BY date DESC LIMIT 1";
+        $sql = "SELECT * FROM temp ORDER BY date DESC LIMIT 1";
         $result = $conn->query($sql);
 
         // Display data in cards
@@ -172,40 +178,17 @@
             ?>
             
             <div class="card">
-                <h2><i class="fas fa-thermometer-half icon"></i> Temperature</h2>
-                <p><?php echo $row["temperature"]; ?></p>
+                <h2><i class="fas fa-thermometer-half icon"></i> Temperature (C)</h2>
+                <p><?php echo $row["temp"]; ?></p>
                 <a href="temp.php" class="chart-link">
                 <i class="fas fa-chart-line chart-icon"></i>
                 </a>
             </div>
             
-            <div class="card">
-                <h2><i class="fas fa-tint icon"></i> Humidity</h2>
-                <p><?php echo $row["humidity"]; ?></p>
-                <a href="humi.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
-            
-            <div class="card">
-                <h2><i class="fas fa-vial icon"></i> Vibration</h2>
-                <p><?php echo $row["vibration"]; ?></p>
-                <a href="vib.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
-            
-            <div class="card">
-                <h2><i class="fas fa-bolt icon"></i> Amperage</h2>
-                <p><?php echo $row["amperage"]; ?></p>
-                <a href="amp.php" class="chart-link">
-                <i class="fas fa-chart-line chart-icon"></i>
-                </a>
-            </div>
 
-            <!-- Blower Health Card -->
+            <!-- Temperature prediction Card -->
             <div class="card card-predicted">
-                <h2><i class="fas fa-heartbeat icon"></i> Blower Health</h2>
+                <h2><i class="fas fa-heartbeat icon"></i> </h2>
                 <p>Predicted: 85%</p>
                 <a href="your-chart-page.html" class="chart-link">
                 <i class="fas fa-chart-line chart-icon"></i>
@@ -239,11 +222,11 @@
                     console.error('Error fetching weather data:', error);
                 });
         }
-        function refreshPage() {
-        location.reload();
-    }
 
-    setInterval(refreshPage, 5000); // Reload every 5 second
+        function refreshPage() {
+            location.reload();
+        }
+
+        setInterval(refreshPage, 5000); // Reload every 5 seconds
     </script>
 </body>
-</html>
