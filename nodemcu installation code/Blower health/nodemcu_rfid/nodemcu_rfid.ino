@@ -65,7 +65,7 @@ void setup()
  }
 void loop()
 { 
-  amperageData = (analogRead(ACS712_PIN) + 5);  // Read analog value from ACS712 sensor
+  amperageData = (analogRead(ACS712_PIN));  // Read analog value from ACS712 sensor
   vibrationData=analogRead(Vib);
   humidityData = dht.readHumidity();
   temperatureData = dht.readTemperature(); 

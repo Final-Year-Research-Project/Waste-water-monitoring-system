@@ -125,7 +125,7 @@
             location.reload();
         }
 
-        setInterval(refreshPage, 15000); // Reload every 15 seconds
+        setInterval(refreshPage, 30000); // Reload every 30 seconds
     </script>
 </body>
 </html>

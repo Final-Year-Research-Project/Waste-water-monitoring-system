@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
     <title>Combined Pulse Chart</title>
@@ -53,7 +52,7 @@
             </a>
         </h1>
         <div class="chart-container">
-            <canvas id="combinedChart" width="800" height="400"></canvas> <!-- Adjusted width and height -->
+            <canvas id="combinedChart" width="800" height="400"></canvas>
         </div>
     </div>
 
@@ -71,9 +70,8 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        // Fetch data from your database table, e.g., 'your_table_name'
-
-        $sql = "SELECT date, temperature, humidity, vibration, amperage, prediction FROM blower_prediction ORDER BY date DESC LIMIT 10";
+        // Fetch the latest 10 records in ascending order by date
+        $sql = "SELECT date, temperature, humidity, vibration, amperage, prediction FROM (SELECT * FROM blower_prediction ORDER BY date DESC LIMIT 10) subquery ORDER BY date ASC";
         $result = $conn->query($sql);
 
         $data = array();
@@ -192,6 +190,12 @@
 
         // Call the renderChart function after the page loads
         window.addEventListener('load', renderChart);
+
+        function refreshPage() {
+            location.reload();
+        }
+
+        setInterval(refreshPage, 30000); // Reload every 30 seconds
     </script>
 </body>
 </html>
